@@ -30,7 +30,7 @@ $ conda install pytorch torchvision torchaudio -c pytorch
 For the last two parts of this hw, using gpu version of pytorch will significantly accelerate the feature extraction procedure. Please refer to [here](https://pytorch.org/get-started/locally/) for more detailed settings.
 
 ## Data and Labels
-Please download the data from [AWS S3](https://cmu-11775-vm.s3.amazonaws.com/spring2022/11775_s22_data.zip). Then unzip it and put the videos under "$path_to_this_repo/videos", and labels under "$path_to_this_repo/labels". You can either directly download the data to this folder or in anywhere else then build a [soft link](https://linuxhint.com/create_symbolic_link_ubuntu/)
+Please download the data from [AWS S3](https://cmu-11775-vm.s3.amazonaws.com/spring2022/11775_s22_data.zip) with wget. You could also download the data manually from [here](https://www.kaggle.com/competitions/cmu-11775-f23-hw1-audio-based-med/data). Then unzip it and put the videos under "$path_to_this_repo/videos", and labels under "$path_to_this_repo/labels". You can either directly download the data to this folder or in anywhere else then build a [soft link](https://linuxhint.com/create_symbolic_link_ubuntu/)
 
 The `.zip` file should include the following:
 1. `video/` folder with 8249 videos in MP4 format
@@ -140,5 +140,4 @@ You can then submit the test outputs to the leaderboard to evaulate your impleme
 ```
 https://www.kaggle.com/competitions/cmu-11775-f23-hw1-audio-based-med/overview
 ```
-We use classification accuracy as the evaluation metric. Please refer to the `test_for_students.csv` file for submission format. You are expected to achieve 0.3+ for Task 2, 0.5+ for Task 3, and 0.7+ for Task 4.
-
+We use classification accuracy as the evaluation metric. Please refer to the `test_for_students.csv` file for submission format. You are expected to achieve 0.3+ for Task 2, 0.5+ for Task 3, and 0.65+ for Task 4.
